@@ -2,5 +2,8 @@
 - git add: sắp xếp cái file bị thay đổi, thêm mới, hoặc xoá so với lần commit trước đó, để chuẩn bị cho lần commit tiếp theo
   + git add filename filename2: thêm 1 hoặc nhiều file bị thay đổi
   + git add: thêm toàn bộ tất cả các file bị thay đổi
+
 - git commit: xác nhận và lưu trữ các file đã thay đổi
   + git commit -m "message commit by Vy"
+  
+-git log: xem lại lịch sử commit
