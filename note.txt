@@ -15,3 +15,5 @@ git config --global user.email "vy.thao.239@gmai.com"
 
 - git remote add origin [đường dẫn trên github]
 - git push -u origin master: đẩy tất cả commit lên trên remote repository 
+
+- git clone: tải remote repository về máy tính
