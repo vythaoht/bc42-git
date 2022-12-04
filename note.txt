@@ -1,12 +1,17 @@
+- Cấu hình git cho user (khai báo 1 lần duy nhất)
+git config --global user.name "vythaoht"
+git config --global user.email "vy.thao.239@gmai.com"
+
 - git init: khởi tạo git cho một project (chỉ cần dùng 1 lần duy nhất)
 - git add: sắp xếp cái file bị thay đổi, thêm mới, hoặc xoá so với lần commit trước đó, để chuẩn bị cho lần commit tiếp theo
   + git add filename filename2: thêm 1 hoặc nhiều file bị thay đổi
-  + git add: thêm toàn bộ tất cả các file bị thay đổi
+  + git add . : thêm toàn bộ tất cả các file bị thay đổi
 
 - git commit: xác nhận và lưu trữ các file đã thay đổi
   + git commit -m "message commit by Vy"
 
 - git log: xem lại lịch sử commit
-
 - git status: xem trạng thái hiện tại của thư mục làm việc, nó sẽ hiển thị những file thay đổi so với lần commit trước đó, đồng thời hiển thị trạng thái của các file đó như là đã đc xác nhận để commit hay chưa
 
+- git remote add origin [đường dẫn trên github]
+- git push -u origin master: đẩy tất cả commit lên trên remote repository 
