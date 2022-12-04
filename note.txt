@@ -5,5 +5,8 @@
 
 - git commit: xác nhận và lưu trữ các file đã thay đổi
   + git commit -m "message commit by Vy"
-  
--git log: xem lại lịch sử commit
+
+- git log: xem lại lịch sử commit
+
+- git status: xem trạng thái hiện tại của thư mục làm việc, nó sẽ hiển thị những file thay đổi so với lần commit trước đó, đồng thời hiển thị trạng thái của các file đó như là đã đc xác nhận để commit hay chưa
+
