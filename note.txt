@@ -1,6 +1,6 @@
 - Cấu hình git cho user (khai báo 1 lần duy nhất)
 git config --global user.name "vythaoht"
-git config --global user.email "vy.thao.239@gmai.com"
+git config --global user.email "vy.thao.239@gmail.com"
 
 - git init: khởi tạo git cho một project (chỉ cần dùng 1 lần duy nhất)
 - git add: sắp xếp cái file bị thay đổi, thêm mới, hoặc xoá so với lần commit trước đó, để chuẩn bị cho lần commit tiếp theo
@@ -21,3 +21,17 @@ git config --global user.email "vy.thao.239@gmai.com"
 - git checkout: chuyển sang một branch khác
   + git checkout branch-name: chuyển branch
   + git checkout -b branch-name: tạo branch
+
+- git pull: kéo tất cả code mới nhất từ remote repository về local repository của 1 branch nào đó
+- git push: đẩy tất cả commit từ local repository lên remote repository
+- git merge: hợp nhất những commit ở 1 branch vào 1 branch khác
+  + VD: branch hiện tại đang là feature-a thì ta chạy lệnh git merge master (hợp nhất những commit của branch master vào feature-a)
+
+QUY TRÌNH XỬ LÝ NẾU BỊ CONFLICT: (feature-a tạo pull request vào master)
+B1: ở local, checkout về branch master
+B2: chạy lệnh git pull để cập nhật những commit mới nhát cho master ở local
+B3: checkout ngược về branch feature-add
+B4: chạy git merge master để hợp nhất những commit của master vào feature-add
+B5: resolve conflict (thực hiện ở VS code)
+B6: git add, git commit, git push
+B7: quay lại GITHUB để tạo pull request
